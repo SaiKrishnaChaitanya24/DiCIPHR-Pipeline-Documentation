@@ -1,4 +1,4 @@
-DiCIPHR-Pipeline
+Running DiCIPHR-Pipeline
 ================
 
 Running the Pipeline
