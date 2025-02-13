@@ -20,6 +20,6 @@ This documentation provides an overview of the DiCIPHR-Pipeline and detailed ins
 Indices and tables
 ==================
 
-* :ref:`genindex`
+* :ref:`index`
 * :doc:`RunningDTI`
 
