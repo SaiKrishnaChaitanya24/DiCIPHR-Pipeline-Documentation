@@ -60,11 +60,11 @@ Run the pipeline using the Singularity container. You need to specify the subjec
 
 Remember to replace `{subject_name}`, `{image_path}`, and `{DWI_absolute_path}` with the actual values for your specific data (use absolute paths).
 
-### Recommended SLURM Options
+** Recommended SLURM Options
 
 When using the `sbatch` command to run the container, add the `--propagate=NONE` option for recommended SLURM settings.
 
-### Pipeline Modes
+** Pipeline Modes
 
 You can run the pipeline in three modes:
 1. **Only DTI_Preprocess**: Specify `-e 1` in the `sbatch` command.
