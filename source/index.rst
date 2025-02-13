@@ -71,8 +71,10 @@ You can run the pipeline in three modes:
 2. **Till Registration Process**: Specify `-e 2` in the `sbatch` command.
 3. **Full Pipeline**: No `-e` option required.
 
+
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`search`
+* :doc:`RunningDTI`
+
