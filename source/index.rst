@@ -5,9 +5,10 @@ This documentation provides an overview of the DiCIPHR-Pipeline and detailed ins
 
 .. image:: images/DTI_image1.png
    :alt: T1 and DTI Preprocessing pipeline
-   :width: 400px
-   :height: 200px
-   :scale: 80 %
+   :width: 800px
+   :height: 400px
+   :scale: 100 %
+   :align: center
 
 Indices and tables
 ==================
