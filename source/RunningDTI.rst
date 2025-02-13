@@ -63,11 +63,13 @@ Remember to replace `{subject_name}`, `{image_path}`, and `{DWI_absolute_path}` 
 --------------------
 
 Recommended SLURM Options
+-------------------- 
 
 When using the `sbatch` command to run the container, add the `--propagate=NONE` option for recommended SLURM settings.
---------------------
 
+--------------------
 Pipeline Modes
+--------------------
 
 You can run the pipeline in three modes:
 1. **Only DTI_Preprocess**: Specify `-e 1` in the `sbatch` command.
