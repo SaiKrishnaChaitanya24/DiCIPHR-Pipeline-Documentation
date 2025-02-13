@@ -68,6 +68,7 @@ Recommended SLURM Options
 When using the `sbatch` command to run the container, add the `--propagate=NONE` option for recommended SLURM settings.
 
 --------------------
+
 Pipeline Modes
 --------------------
 
