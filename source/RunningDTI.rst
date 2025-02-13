@@ -6,6 +6,12 @@ Running the Pipeline
 
 Follow the steps below to run the DiCIPHR-Pipeline. Ensure you have the necessary permissions and resources to execute these commands.
 
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
+
 **Step 1: Clone the Repository**
 
 First, clone the repository to your local machine using the following command:
@@ -77,9 +83,4 @@ You can run the pipeline in three modes:
 2. **Till Registration Process**: Specify `-e 2` in the `sbatch` command.
 3. **Full Pipeline**: No `-e` option required.
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
 
