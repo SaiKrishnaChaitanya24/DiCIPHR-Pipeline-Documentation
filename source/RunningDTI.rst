@@ -80,5 +80,5 @@ You can run the pipeline in three modes:
 Indices and tables
 ==================
 
-* :ref:`index`
+* :doc:`index`
 * :ref:`search`
