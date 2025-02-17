@@ -60,6 +60,6 @@ Index
 ==================
 
 * :doc:`index`
-* :doc:`RunningDTI`
 * :doc:`Installation`
+* :doc:`RunningDTI`
 * :ref:`search`
