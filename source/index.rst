@@ -23,4 +23,6 @@ Index
 * :doc:`Installation`
 * :doc:`RunningDTI`
 * :doc:`UsageNotes`
+* :doc:`PerformanceBenchmarks`
+* :doc:`Citations`
 * :ref:`search`
