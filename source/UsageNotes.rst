@@ -27,9 +27,12 @@ Command-Line Arguments
      - Input mask
    * - ``-e``
      - Modes available:
-       * 1: Only DTI Preprocess
-       * 2: Till registration DTI to T1
-       * Default: The whole pipeline
+
+       ** 1: Only DTI Preprocess
+
+       ** 2: Till registration DTI to T1
+
+       ** Default: The whole pipeline
 
 
 Indices and tables
