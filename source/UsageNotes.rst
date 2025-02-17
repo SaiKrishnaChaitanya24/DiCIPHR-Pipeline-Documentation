@@ -61,4 +61,5 @@ Index
 
 * :doc:`index`
 * :doc:`RunningDTI`
+* :doc:`Installation`
 * :ref:`search`
