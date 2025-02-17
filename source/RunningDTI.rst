@@ -102,4 +102,5 @@ Index
 
 * :doc:`index`
 * :doc:`UsageNotes`
+* :doc:`Installation`
 * :ref:`search`
