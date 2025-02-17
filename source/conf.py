@@ -16,7 +16,7 @@ master_doc = 'index'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'copybutton',  # Add sphinx_copybutton extension
+    'sphinx_copybutton'  # Add sphinx_copybutton extension
 ]
 
 templates_path = ['_templates']
