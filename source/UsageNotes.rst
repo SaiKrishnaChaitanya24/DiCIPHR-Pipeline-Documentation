@@ -35,6 +35,25 @@ Command-Line Arguments
        **Default**: The whole pipeline
 
 
+Expected Arguments
+------------------
+
+For ``notopup``:
+   - ``-s``
+   - ``-i``
+   - ``-d``
+   - ``-o``
+
+For ``topup``:
+   - ``-s``
+   - ``-i``
+   - ``-d``
+   - ``-o``
+   - ``-t``
+   - ``-T``
+   - ``-p``
+
+
 Indices and tables
 ==================
 
