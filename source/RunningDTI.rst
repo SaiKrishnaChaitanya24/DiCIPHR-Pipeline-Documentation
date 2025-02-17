@@ -103,4 +103,6 @@ Index
 * :doc:`index`
 * :doc:`Installation`
 * :doc:`UsageNotes`
+* :doc:`PerformanceBenchmarks`
+* :doc:`Citations`
 * :ref:`search`
