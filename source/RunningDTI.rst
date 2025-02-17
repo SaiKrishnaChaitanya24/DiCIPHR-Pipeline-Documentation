@@ -21,7 +21,7 @@ Build the `diciphr_pipeline.sif` container using the provided definition file:
 .. code-block:: bash
 
     cd DiCIPHR-Pipeline
-    sbatch --cpus-per-task=4 --mem=32G --wrap="singularity build --notest diciphr_pipeline.sif Singularity.def"
+    sbatch --cpus-per-task=4 --mem=32G --wrap="apptainer build --notest diciphr_pipeline.sif Singularity.def"
 
 **Step 3: Test the Singularity Container**
 
@@ -58,7 +58,7 @@ if you are already in the DiCIPHR-Pipeline directory run below command, else cha
 
 .. code-block:: bash
     
-    sbatch --cpus-per-task=4 --job-name=dti --mem=32G --wrap="singularity run --no-home --bind /folder_path:/folder_path --bind {output_path}:/output diciphr_pipeline.sif -s {subject_name} -i {image_path} -d {DWI_absolute_path} -o /output"
+    sbatch --cpus-per-task=4 --job-name=dti --mem=32G --wrap="apptainer run --no-home --bind /folder_path:/folder_path --bind {output_path}:/output diciphr_pipeline.sif -s {subject_name} -i {image_path} -d {DWI_absolute_path} -o /output"
 
 **For Topup:**
 
@@ -67,7 +67,7 @@ if you are already in the DiCIPHR-Pipeline directory run below command, else cha
 .. code-block:: bash
 
     
-    sbatch --cpus-per-task=4 --job-name=dti --mem=32G --wrap="singularity run --no-home --bind /folder_path:/folder_path --bind {output_path}:/output diciphr_pipeline.sif -s {subject_name} -i {image_path} -d {DWI_absolute_path} -o /output -t {topup file} -P {Phase Encoding} -T {Readout Time}"
+    sbatch --cpus-per-task=4 --job-name=dti --mem=32G --wrap="apptainer run --no-home --bind /folder_path:/folder_path --bind {output_path}:/output diciphr_pipeline.sif -s {subject_name} -i {image_path} -d {DWI_absolute_path} -o /output -t {topup file} -P {Phase Encoding} -T {Readout Time}"
 
 **Notes:**
 - When using files that require topup, specify the phase encoding with `-P` and the readout time with `-T`.
