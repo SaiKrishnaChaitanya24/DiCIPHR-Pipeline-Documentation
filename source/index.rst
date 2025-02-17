@@ -17,7 +17,7 @@ This documentation provides an overview of the DiCIPHR-Pipeline and detailed ins
    :scale: 115 %
    :align: center
 
-Indices and tables
+Index
 ==================
 
 * :doc:`RunningDTI`
