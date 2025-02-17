@@ -21,4 +21,5 @@ Indices and tables
 ==================
 
 * :doc:`RunningDTI`
+* :doc:`UsageNotes`
 * :ref:`search`
