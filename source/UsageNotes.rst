@@ -30,3 +30,11 @@ Command-Line Arguments
        * 1: Only DTI Preprocess
        * 2: Till registration DTI to T1
        * Default: The whole pipeline
+
+
+Indices and tables
+==================
+
+* :doc:`index`
+* :doc:`RunningDTI`
+* :ref:`search`
