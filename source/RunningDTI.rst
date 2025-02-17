@@ -54,16 +54,19 @@ Run the pipeline using the Singularity container, specifying the subject name, T
 
 **For Notopup:**
 
-.. code-block:: bash
+if you are already in the DiCIPHR-Pipeline directory run below command, else change your current path to where DiCIPHR-Pipeline directory is and run the below command
 
-    if you are already in the DiCIPHR-Pipeline directory run below command, else change your current path to where DiCIPHR-Pipeline directory is and run the below command
+.. code-block:: bash
+    
     sbatch --cpus-per-task=4 --job-name=dti --mem=32G --wrap="singularity run --no-home --bind /folder_path:/folder_path --bind {output_path}:/output diciphr_pipeline.sif -s {subject_name} -i {image_path} -d {DWI_absolute_path} -o /output"
 
 **For Topup:**
 
+if you are already in the DiCIPHR-Pipeline directory run below command, else change your current path to where DiCIPHR-Pipeline directory is and run the below command
+
 .. code-block:: bash
 
-    if you are already in the DiCIPHR-Pipeline directory run below command, else change your current path to where DiCIPHR-Pipeline directory is and run the below command
+    
     sbatch --cpus-per-task=4 --job-name=dti --mem=32G --wrap="singularity run --no-home --bind /folder_path:/folder_path --bind {output_path}:/output diciphr_pipeline.sif -s {subject_name} -i {image_path} -d {DWI_absolute_path} -o /output -t {topup file} -P {Phase Encoding} -T {Readout Time}"
 
 **Notes:**
