@@ -62,4 +62,6 @@ Index
 * :doc:`index`
 * :doc:`Installation`
 * :doc:`RunningDTI`
+* :doc:`PerformanceBenchmarks`
+* :doc:`Citations`
 * :ref:`search`
