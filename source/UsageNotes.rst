@@ -17,6 +17,8 @@ Command-Line Arguments
      - DWI Image
    * - ``-o``
      - Output Directory
+   * - ``-t``
+     - Topup file
    * - ``-p``
      - Phase encoding value
    * - ``-T``
