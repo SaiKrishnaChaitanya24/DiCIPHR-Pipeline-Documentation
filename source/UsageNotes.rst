@@ -28,11 +28,11 @@ Command-Line Arguments
    * - ``-e``
      - Modes available:
 
-       ** 1: Only DTI Preprocess
+       ** 1 **: Only DTI Preprocess
 
-       ** 2: Till registration DTI to T1
+       ** 2 **: Till registration DTI to T1
 
-       ** Default: The whole pipeline
+       ** Default **: The whole pipeline
 
 
 Indices and tables
