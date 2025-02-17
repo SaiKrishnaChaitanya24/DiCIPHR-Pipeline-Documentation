@@ -1,22 +1,20 @@
-function addCopyButtons() {
-    document.querySelectorAll('pre').forEach((codeBlock) => {
-        let button = document.createElement('button');
-        button.className = 'copy-btn';
-        button.textContent = 'Copy';
+document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('div.highlight pre');
 
-        button.addEventListener('click', () => {
-            let code = codeBlock.querySelector('code').textContent;
-            navigator.clipboard.writeText(code).then(() => {
-                alert('Code copied to clipboard!');
+    codeBlocks.forEach(block => {
+        const button = document.createElement('button');
+        button.className = 'copy-button';
+        button.type = 'button';
+        button.innerText = 'Copy';
+
+        button.addEventListener('click', function() {
+            const code = block.innerText;
+            navigator.clipboard.writeText(code).then(function() {
+                button.innerText = 'Copied!';
+                setTimeout(() => button.innerText = 'Copy', 2000);
             });
         });
 
-        let wrapper = document.createElement('div');
-        wrapper.className = 'code-container';
-        codeBlock.parentNode.insertBefore(wrapper, codeBlock);
-        wrapper.appendChild(codeBlock);
-        wrapper.appendChild(button);
+        block.parentNode.insertBefore(button, block);
     });
-}
-
-document.addEventListener('DOMContentLoaded', addCopyButtons);
+});
