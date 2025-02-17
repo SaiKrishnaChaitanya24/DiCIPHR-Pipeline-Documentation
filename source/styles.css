@@ -1,0 +1,18 @@
+.code-container {
+    position: relative;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: #005BB5;
+}
