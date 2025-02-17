@@ -1,1 +1,32 @@
+Usage Notes
+===========
 
+Command-Line Arguments
+----------------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Argument
+     - Description
+   * - ``-s``
+     - Input subject name
+   * - ``-i``
+     - Raw T1 Image
+   * - ``-d``
+     - DWI Image
+   * - ``-o``
+     - Output Directory
+   * - ``-p``
+     - Phase encoding value
+   * - ``-T``
+     - Readout Time
+   * - ``-w``
+     - Work directory (set to current path)
+   * - ``-m``
+     - Input mask
+   * - ``-e``
+     - Modes available:
+       * 1: Only DTI Preprocess
+       * 2: Till registration DTI to T1
+       * Default: The whole pipeline
