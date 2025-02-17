@@ -26,8 +26,11 @@ Build the `diciphr_pipeline.sif` container using the provided definition file:
 **Step 3: Test the Singularity Container**
 
 Test the container to ensure it was built correctly. If the test is successful, you should see the following message in the .out file:
+
 `Container Test Successful, Please Run the Container
+
 Maintainer: Drew Parker <william.parker@pennmedicine.upenn.edu> and Sai Krishna Chaitanya Annavazala <SaiKrishna.Annavazala@pennmedicine.upenn.edu>
+
 Version: 1.0.0`
 
 .. code-block:: bash
