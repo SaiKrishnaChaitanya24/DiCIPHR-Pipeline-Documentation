@@ -56,7 +56,7 @@ For ``topup``:
    - ``-p``
 
 
-Indices and tables
+Index
 ==================
 
 * :doc:`index`
