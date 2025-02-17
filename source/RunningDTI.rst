@@ -93,4 +93,5 @@ Indices and tables
 ==================
 
 * :doc:`index`
+* :doc:`UsageNotes`
 * :ref:`search`
