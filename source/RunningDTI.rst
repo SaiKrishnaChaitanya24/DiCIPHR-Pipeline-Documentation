@@ -76,7 +76,15 @@ Run the pipeline using the Singularity container, specifying the subject name, T
 Recommended SLURM Options
 ------------------------
 
-Add the `--propagate=NONE` option for recommended SLURM settings when using the `sbatch` command.
+For optimal performance when using the `sbatch` command, add the following recommended SLURM settings:
+
+.. code-block:: bash
+
+    --propagate=NONE
+    --time=1-00:00:00  
+    -n 1  # Launch 1 task
+    -N 1  # Use 1 node
+    -c 4  # Use 4 CPUs per task
 
 --------------------
 
