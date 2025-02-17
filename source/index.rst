@@ -20,6 +20,7 @@ This documentation provides an overview of the DiCIPHR-Pipeline and detailed ins
 Index
 ==================
 
+* :doc:`Installation`
 * :doc:`RunningDTI`
 * :doc:`UsageNotes`
 * :ref:`search`
