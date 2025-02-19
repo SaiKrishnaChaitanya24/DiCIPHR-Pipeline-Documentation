@@ -20,8 +20,7 @@ Build the `diciphr_pipeline.sif` container using the provided definition file:
 
 .. code-block:: bash
 
-    cd DiCIPHR-Pipeline
-    sbatch --cpus-per-task=4 --mem=32G --wrap="apptainer build --notest diciphr_pipeline.sif Singularity.def"
+    sbatch --cpus-per-task=4 --mem=32G --wrap="apptainer build --notest diciphr_pipeline.sif ./DiCIPHR-Pipeline/Singularity.def"
 
 **Step 3: Test the Singularity Container**
 
