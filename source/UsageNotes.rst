@@ -73,6 +73,7 @@ Index
 * :doc:`index`
 * :doc:`Installation`
 * :doc:`RunningDTI`
+* :doc:`batch_array`
 * :doc:`PerformanceBenchmarks`
 * :doc:`Citations`
 * :ref:`search`
