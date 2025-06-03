@@ -28,20 +28,27 @@ Command-Line Arguments
      - Denoising Mode:
        
        **0**: No denoising  
+
        **1**: MP-PCA only  
+
        **2**: Gibbs de-ringing + MP-PCA (recommended)
    * - `-e`
      - Distortion Correction Mode:
        
        **0**: No correction (for non-human or tumor cases)  
+
        **1**: Use Topup (requires reverse PE scan)  
+
        **2**: Use Synb0-Disco (requires T1 and DWI)
    * - `-B`
      - Pipeline Mode:
        
        **1**: Synb0-Disco, DTI Preprocess, Fernet  
+
        **2**: + BrainMaGe, DTI to T1 Registration  
+
        **3**: + T1 to Eve Registration, ROI Stats (Full DTI Pipeline)  
+
        **4**: + Freesurfer, Structural Connectivity Pipeline
    * - `-F`
      - Set to `True` to run Freesurfer (required for Structural Connectivity)
