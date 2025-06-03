@@ -59,14 +59,6 @@ Expected Argument Combinations
    - `-z`: 2 (for best denoising)
    - `-e`: 2 (if no reverse PE scan)
 
-Example Command (with SLURM)
-----------------------------
-
-.. code-block:: bash
-
-   sbatch --cpus-per-task=4 --job-name=Combined_ --time=2-00:00:00 --mem=256G --wrap="apptainer run --no-home --bind {Data_Path}:/Input --bind {Output_Path}:/output ./Combined-Pipeline/combined_pipeline.sif -s {Subject_Name} -i /input/{T1_File} -d /input/{DWI_File} -o /output -z {Denoise_Mode} -p {PE_Dir} -t /input/{ReversePE_File} -T {Readout_Time} -e {Distortion_Mode} -B 3"
-
-Replace placeholders like `{Subject_Name}`, `{T1_File}`, etc., with actual values.
 
 Index
 ==================
