@@ -33,4 +33,4 @@ This script is used for batch array processing of multiple subjects utilizing th
     T1_IMAGE=$(find "$SUBJECT_DIR" -type f -iname "*T1*.nii.gz" | head -n 1)
     echo $T1_IMAGE
 
-    apptainer run --no-home --bind ${BASE_DIR}/${SUBJECT}:${BASE_DIR}/${SUBJECT} --bind $OUTPUT_PATH:/output $SIF_PATH -s $SUBJECT -d $DWI_IMAGE -i $T1_IMAGE -o /output -B 3 -e 1 -F True -z
+    apptainer run --no-home --bind ${BASE_DIR}/${SUBJECT}:${BASE_DIR}/${SUBJECT} --bind $OUTPUT_PATH:/output $SIF_PATH -s $SUBJECT -d $DWI_IMAGE -i $T1_IMAGE -o /output -B 3 -e 1 -F True -z 2
