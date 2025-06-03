@@ -50,6 +50,7 @@ Index
 * :doc:`index`
 * :doc:`UsageNotes`
 * :doc:`RunningDTI`
+* :doc:`batch_array`
 * :doc:`PerformanceBenchmarks`
 * :doc:`Citations`
 * :ref:`search`
