@@ -1,3 +1,4 @@
+
 Usage Notes
 ===========
 
@@ -9,52 +10,63 @@ Command-Line Arguments
 
    * - Argument
      - Description
-   * - ``-s``
-     - Input subject name
-   * - ``-i``
-     - Raw T1 Image
-   * - ``-d``
+   * - `-s`
+     - Subject Name
+   * - `-i`
+     - T1 Image
+   * - `-d`
      - DWI Image
-   * - ``-o``
-     - Output Directory
-   * - ``-t``
-     - Topup file
-   * - ``-p``
-     - Phase encoding value
-   * - ``-T``
-     - Readout Time
-   * - ``-w``
-     - Work directory (set to current path)
-   * - ``-m``
-     - Input mask
-   * - ``-e``
-     - Modes available:
+   * - `-t`
+     - Topup Image (if available)
+   * - `-p`
+     - Phase Encoding Direction (e.g., AP, LR, IS)
+   * - `-T`
+     - Readout Time (e.g., 0.064)
+   * - `-o`
+     - Output Directory Path
+   * - `-z`
+     - Denoising Mode:
+       
+       **0**: No denoising  
+       **1**: MP-PCA only  
+       **2**: Gibbs de-ringing + MP-PCA (recommended)
+   * - `-e`
+     - Distortion Correction Mode:
+       
+       **0**: No correction (for non-human or tumor cases)  
+       **1**: Use Topup (requires reverse PE scan)  
+       **2**: Use Synb0-Disco (requires T1 and DWI)
+   * - `-B`
+     - Pipeline Mode:
+       
+       **1**: Synb0-Disco, DTI Preprocess, Fernet  
+       **2**: + BrainMaGe, DTI to T1 Registration  
+       **3**: + T1 to Eve Registration, ROI Stats (Full DTI Pipeline)  
+       **4**: + Freesurfer, Structural Connectivity Pipeline
+   * - `-F`
+     - Set to `True` to run Freesurfer (required for Structural Connectivity)
 
-       **1**: Only DTI Preprocess
+Expected Argument Combinations
+------------------------------
 
-       **2**: Till registration DTI to T1
+**If Reverse PE Scan is Available (`-e 1`)**:
+   - `-s`, `-i`, `-d`, `-t`, `-p`, `-T`, `-o`, `-z`, `-e`, `-B`
 
-       **Default**: The whole pipeline
+**If Reverse PE Scan is Not Available (`-e 0` or `2`)**:
+   - `-s`, `-i`, `-d`, `-o`, `-z`, `-e`, `-B`
 
+**Recommended Settings**:
+   - `-z`: 2 (for best denoising)
+   - `-e`: 2 (if no reverse PE scan)
 
-Expected Arguments
-------------------
+Example Command (with SLURM)
+----------------------------
 
-For ``notopup``:
-   - ``-s``
-   - ``-i``
-   - ``-d``
-   - ``-o``
+.. code-block:: bash
 
-For ``topup``:
-   - ``-s``
-   - ``-i``
-   - ``-d``
-   - ``-o``
-   - ``-t``
-   - ``-T``
-   - ``-p``
+   sbatch --cpus-per-task=4 --job-name=Combined_ --time=2-00:00:00 --mem=256G --wrap="apptainer run --no-home --bind {Data_Path}:/Input --bind {Output_Path}:/output ./Combined-Pipeline/combined_pipeline.sif -s {Subject_Name} -i /input/{T1_File} -d /input/{DWI_File} -o /output -z {Denoise_Mode} -p {PE_Dir} -t /input/{ReversePE_File} -T {Readout_Time} -e {Distortion_Mode} -B 3"
 
+Replace placeholders like `{Subject_Name}`, `{T1_File}`, etc., with actual values.
 
 Index
 ==================
