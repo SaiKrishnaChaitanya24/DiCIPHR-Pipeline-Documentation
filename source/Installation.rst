@@ -48,8 +48,8 @@ Index
 ==================
 
 * :doc:`index`
-* :doc:`RunningDTI`
 * :doc:`UsageNotes`
+* :doc:`RunningDTI`
 * :doc:`PerformanceBenchmarks`
 * :doc:`Citations`
 * :ref:`search`
