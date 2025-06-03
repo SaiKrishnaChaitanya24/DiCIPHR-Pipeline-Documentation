@@ -57,3 +57,14 @@ After saving the script, submit it to the SLURM scheduler using:
     sbatch run_batch_pipeline.sh
 
 Replace all placeholders (e.g., ``{total number of subjects}``, ``{Base Directory Path}``) with actual values appropriate to your setup.
+
+Index
+==================
+
+* :doc:`index`
+* :doc:`Installation`
+* :doc:`UsageNotes`
+* :doc:`RunningDTI`
+* :doc:`PerformanceBenchmarks`
+* :doc:`Citations`
+* :ref:`search`
