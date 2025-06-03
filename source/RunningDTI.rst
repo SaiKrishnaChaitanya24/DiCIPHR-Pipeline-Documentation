@@ -42,6 +42,7 @@ Index
 * :doc:`index`
 * :doc:`Installation`
 * :doc:`UsageNotes`
+* :doc:`batch_array`
 * :doc:`PerformanceBenchmarks`
 * :doc:`Citations`
 * :ref:`search`
